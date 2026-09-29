@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Materno-Infantil · 1ª Prova | Gestação e Lactação</title>
+<meta name="description" content="Revisão da 1ª prova de Nutrição Materno-Infantil: gestação e lactação/aleitamento materno. Resumos, flashcards, simulados e banco de questões.">
+<meta name="theme-color" content="#0e6b6f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== Tokens (edite as cores aqui) ===== */
+:root{--bg:#f4f7f8;--card:#fff;--ink:#12272e;--mut:#5a6f76;--pri:#0e6b6f;--acc:#a23b72;--line:#dbe5e7;--soft:#e4f1f1;--warn:#fbeaf2;--r:14px}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1a1e;--card:#15262b;--ink:#e6f0f1;--mut:#9bb0b5;--pri:#4fc1c4;--acc:#e58ab9;--line:#25393f;--soft:#1a3238;--warn:#2e2030}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:0 0 .5em}
+a{color:var(--pri)}button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--card);padding:8px;z-index:99}
+/* ===== Layout ===== */
+header{position:fixed;inset:0 0 auto 0;height:60px;display:flex;gap:10px;align-items:center;padding:0 14px;background:var(--card);border-bottom:1px solid var(--line);z-index:20}
+.brand{font:700 1.1rem Fraunces,serif;color:var(--pri);text-decoration:none;white-space:nowrap}
+#menuBtn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;width:42px;height:42px;font-size:20px}
+#q{flex:1;min-width:0;max-width:460px;margin-left:auto;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+aside{position:fixed;top:60px;bottom:0;left:0;width:300px;overflow:auto;background:var(--card);border-right:1px solid var(--line);padding:16px;z-index:15;transition:transform .25s}
+aside h3{font:600 .8rem Inter;color:var(--mut);margin:18px 0 6px}
+aside a{display:block;padding:7px 10px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.93rem}
+aside a:hover{background:var(--soft)}aside a.on{background:var(--pri);color:#fff}
+aside a.ok::after{content:" ✓";color:var(--acc)}aside a.on.ok::after{color:#fff}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:6px 0 2px}.bar i{display:block;height:100%;background:var(--acc);transition:width .3s}
+main{margin:60px 0 0 300px;padding:28px clamp(16px,4vw,48px) 90px;max-width:1000px;outline:0}
+#ov{display:none;position:fixed;inset:60px 0 0 0;background:#0007;z-index:14}
+@media(max-width:860px){aside{transform:translateX(-105%);width:min(310px,86vw)}body.open aside{transform:none}body.open #ov{display:block}main{margin-left:0}}
+@media(min-width:861px){#menuBtn{display:none}}
+/* ===== Componentes ===== */
+.crumb{color:var(--acc);font-weight:600;font-size:.9rem;margin:0}
+.call{border-radius:var(--r);padding:14px 18px;margin:14px 0;border:1px solid var(--line)}.call p{margin:.2em 0 0}
+.sum{background:var(--soft)}.exam{background:var(--warn);border-color:var(--acc)}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.btn,.tools button,.pn a{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:10px;text-decoration:none;display:inline-block}
+.btn.pri,.tools .pri{background:var(--pri);color:#fff;border-color:var(--pri)}html .btn.pri{color:#fff}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin:10px 0}
+summary{padding:14px 18px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--acc);font-size:1.3rem;line-height:1}details[open] summary::after{content:"−"}
+.bd{padding:0 18px 16px}.bd ul{padding-left:20px;margin:.4em 0}.bd li{margin:.3em 0}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:480px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--soft)}
+.pn{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:10px 0 24px}
+.tc{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;color:var(--ink);text-decoration:none;transition:border-color .2s,transform .2s}
+.tc:hover{border-color:var(--pri);transform:translateY(-2px)}.tc b{display:block}.tc span{font-size:.86rem;color:var(--mut)}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.stats div{flex:1 1 120px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px}.stats b{font:700 1.6rem Fraunces,serif;color:var(--pri);display:block}
+.tl{display:flex;border-radius:12px;overflow:hidden;margin:18px 0 6px;font-size:.85rem;color:#fff;text-align:center}
+.tl div{padding:12px 4px}.tl .a{flex:13;background:#3d8f93}.tl .b{flex:14;background:#0e6b6f}.tl .c{flex:13;background:#0a4f52}.tl .d{flex:12;background:#a23b72}
+.fc{min-height:230px;display:grid;place-items:center;text-align:center;padding:28px;background:var(--card);border:2px solid var(--pri);border-radius:18px;font-size:1.15rem;cursor:pointer;margin:14px 0}
+.fc.back{background:var(--soft);border-color:var(--acc)}.fc small{display:block;color:var(--mut);font-size:.8rem;margin-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.op{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.op:hover:not(:disabled){border-color:var(--pri)}.op.ok{background:#d9f2e3;border-color:#2e9e5b;color:#0d3b20}.op.no{background:#fbdcdc;border-color:#c0392b;color:#5a1310}
+.ex{background:var(--soft);border-radius:12px;padding:12px 16px;margin:10px 0}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin:8px 0}
+#top{position:fixed;right:16px;bottom:16px;width:46px;height:46px;border-radius:50%;border:0;background:var(--acc);color:#fff;font-size:20px;display:none;z-index:10}
+textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;resize:vertical}
+mark{background:#ffe08a;color:#000;border-radius:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header>
+<button id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="side">☰</button>
+<a class="brand" href="#/inicio">Materno-Infantil</a>
+<input id="q" type="search" placeholder="Buscar assunto (ex.: ferro, pega, ocitocina)" aria-label="Buscar assuntos" autocomplete="off">
+</header>
+<aside id="side" aria-label="Menu de assuntos"></aside><div id="ov"></div>
+<main id="main" tabindex="-1"></main>
+<button id="top" aria-label="Voltar ao topo">↑</button>
+
+<script>
+/* ==========================================================
+   DADOS — para editar o conteúdo, altere os arrays T, F e B.
+   T = assuntos | F = flashcards [pergunta, resposta] | B = banco de questões
+   ========================================================== */
+const T=[
+{id:"trimestres",g:"Gestação",t:"Trimestres e crescimento fetal",
+s:"A gestação tem 40 semanas e 3 trimestres. O feto passa da multiplicação de células (hiperplasia) para o aumento do tamanho delas (hipertrofia).",
+p:"Peso fetal médio (slides): 12ª sem = 300 g, 27ª = 1000 g, 38ª = 3000 g. O marco de 28 semanas é ponto crítico. Folato até o fim do 1º trimestre (tubo neural).",
+sec:[
+["Crescimento por trimestre",`<div class=tw><table><tr><th>Trimestre<th>Crescimento<th>Velocidade<th>Peso médio</tr><tr><td>1º<td>Hiperplasia<td>Lenta<td>12ª sem: 300 g</tr><tr><td>2º<td>Hiperplasia + hipertrofia<td>Acelerada<td>27ª sem: 1000 g</tr><tr><td>3º<td>Hipertrofia<td>Máxima<td>38ª sem: 3000 g</tr></table></div><p><b>Por que importa:</b> uma agressão nutricional na fase de hiperplasia reduz o número de células (efeito mais duradouro); na hipertrofia, reduz o tamanho delas (mais recuperável).</p>`],
+["1º trimestre",`<ul><li>Intensa divisão celular: a saúde do embrião depende do estado nutricional pré-gestacional (reservas de energia, vitaminas e minerais).</li><li>Formação do tubo neural: administrar folato até o fim do 1º trimestre.</li><li>Peso esperado: perda de até 3 kg (enjoos e vômitos) ou ganho de até 2 kg.</li></ul>`],
+["2º e 3º trimestres",`<ul><li>O meio externo passa a influenciar direto o feto: ganho de peso adequado, ingestão de energia e nutrientes, estilo de vida e fator emocional.</li><li>Marco de 28 semanas: consequências imediatas e futuras para mãe e feto.</li><li>Adipócitos fetais surgem a partir do 4º mês; no último trimestre, o ganho de peso materno estimula a massa muscular fetal.</li></ul>`],
+["Fatores de risco gestacional",`<ul><li><b>Inalteráveis:</b> idade &lt;15 ou &gt;35 anos, doenças crônicas, altura &lt;1,45 m, paridade.</li><li><b>Estilo de vida:</b> tabagismo, álcool, drogas, IMC extremo, inatividade, má alimentação.</li><li><b>Sociais:</b> violência, isolamento, habitação vulnerável, baixa escolaridade.</li><li>É o momento crítico para educação nutricional.</li></ul>`]]},
+{id:"placenta",g:"Gestação",t:"Placenta e hormônios",
+s:"A placenta transporta nutrientes e O2, elimina resíduos fetais e produz os hormônios que sustentam a gestação.",
+p:"Placenta: 51 g (10–12 sem) até 500 g no final. Progesterona = relaxa musculatura lisa (constipação). Lactogênio placentário = antagoniza insulina (risco de DMG).",
+sec:[
+["Funções da placenta",`<ul><li><b>Transporte:</b> oxigênio e nutrientes da mãe para o feto.</li><li><b>Eliminação:</b> produtos do metabolismo fetal.</li><li><b>Síntese:</b> hormônios do crescimento e desenvolvimento fetal.</li></ul>`],
+["Hormônios placentários",`<div class=tw><table><tr><th>Hormônio<th>Ação<th>Consequência clínica</tr><tr><td>HCG<td>Inibe contração uterina, estimula relaxina até a placenta produzir progesterona<td>Detectado no sangue (8 dias) e na urina (15 dias)</tr><tr><td>Tireoidianos<td>Regulam metabolismo; o feto depende 100% da mãe nos primeiros meses<td>Atenção ao iodo</tr><tr><td>Progesterona<td>Relaxa músculo liso do útero e do intestino; mamogênese<td>Mais absorção, porém constipação</tr><tr><td>Estrogênio<td>Elasticidade uterina; reduz proteínas séricas; afeta tireoide<td>Albumina sérica menor</tr><tr><td>Lactogênio placentário<td>Antagoniza a insulina: mais glicose no sangue, proteína depositada no tecido<td>Poupa glicose para o feto</tr><tr><td>Insulina<td>Resposta normal no início; resistência no final (ação reduzida em 50–60%)<td>Base do diabetes gestacional</tr></table></div>`]]},
+{id:"adaptacoes",g:"Gestação",t:"Adaptações maternas",
+s:"Mudanças fisiológicas garantem gestação, parto e lactação, mas aumentam a vulnerabilidade nutricional.",
+p:"Hemodiluição: plasma +50% e massa de Hb +20% = queda de 20% na concentração de Hb e 15% no Ht, com VCM e HCM inalterados. Ureia e creatinina caem.",
+sec:[
+["Sangue e coração",`<ul><li>Volume plasmático +50%; massa de hemoglobina +20%; débito cardíaco +30–50% (mantido até o fim).</li><li><b>Por que acontece:</b> o plasma cresce mais que as hemácias (ação de estrogênio e progesterona).</li><li><b>Laboratório:</b> a “anemia fisiológica” tem VCM/HCM normais; anemia ferropriva mostra microcitose e ferritina baixa.</li></ul>`],
+["Metabolismo",`<ul><li>Metabolismo basal aumenta 15–20%.</li><li>No último trimestre, 50–70% das kcal diárias vão ao feto como glicose; 20% da energia vem de aminoácidos; o restante, de lipídios.</li></ul>`],
+["Respiratório e renal",`<ul><li>Hiperventilação (progesterona e estrogênio) para suprir 20% a mais de O2; no final, o útero restringe o diafragma (respiração curta, “ofegante”).</li><li>Fluxo plasmático renal até +70% e filtração glomerular +50%: ureia e creatinina séricas diminuem (valores “normais” de não gestante indicam risco).</li></ul>`],
+["Trato gastrointestinal",`<ul><li><b>Sensorial:</b> olfato aumentado no 1º trimestre, principal causa de náuseas e vômitos.</li><li><b>Gástrico:</b> menor tônus, menos HCl, esvaziamento lento (refluxo).</li><li><b>Intestinal:</b> cólon lento: mais absorção, porém constipação.</li></ul>`]]},
+{id:"ganho",g:"Gestação",t:"Ganho de peso gestacional (conceitual)",
+s:"O ganho de peso adequado reflete e influencia a saúde da mãe e do feto. A meta depende do IMC pré-gestacional.",
+p:"Não se recomenda perder peso na gestação, nem com sobrepeso ou obesidade. Ganho insuficiente = baixo peso ao nascer; ganho excessivo = macrossomia, DMG, hipertensão e retenção de peso pós-parto.",
+sec:[
+["Como pensar o ganho",`<ul><li>A faixa de ganho é definida pelo estado nutricional antes da gestação: quem começa com baixo peso precisa ganhar mais; quem começa com sobrepeso ou obesidade, menos.</li><li>Acompanha-se o ganho em cada consulta, na curva da Caderneta da Gestante, e não só o peso final.</li><li>No 1º trimestre o ganho é pequeno e pode haver perda leve por náuseas; o maior ganho ocorre no 2º e 3º trimestres.</li></ul>`],
+["Riscos do ganho inadequado",`<div class=tw><table><tr><th>Ganho<th>Possíveis consequências</tr><tr><td>Insuficiente<td>Restrição de crescimento, baixo peso ao nascer, prematuridade, menor reserva para a lactação</tr><tr><td>Excessivo<td>Macrossomia, diabetes gestacional, hipertensão/pré-eclâmpsia, cesárea, retenção de peso no pós-parto</tr></table></div>`],
+["Para onde vai o peso ganho",`<p>Feto, placenta, líquido amniótico, útero, mamas, volume sanguíneo, líquido extracelular e uma reserva de gordura materna que ajuda na lactação. Por isso o ganho não é só “gordura a perder”.</p>`],
+["Conduta conceitual",`<ul><li><b>Baixo peso:</b> investigar história alimentar, hiperêmese, infecções e anemia; orientar ganho adequado.</li><li><b>Eutrofia:</b> manter hábitos saudáveis.</li><li><b>Sobrepeso/obesidade:</b> investigar edema, diabetes, polidrâmnio, macrossomia e pré-eclâmpsia; promover hábitos saudáveis, nunca perda de peso.</li></ul>`]]},
+{id:"necessidades",g:"Gestação",t:"Necessidades nutricionais e cuidados alimentares",
+s:"A energia aumenta pouco e só a partir do 2º trimestre; o que cresce muito é a necessidade de micronutrientes. Vale mais a qualidade da dieta do que a quantidade.",
+p:"Não se come “por dois”. Água em torno de 3 L/dia. Evitar álcool, tabaco, alimentos crus ou malpassados, queijos não pasteurizados e excesso de ultraprocessados.",
+sec:[
+["Energia e macronutrientes (conceitual)",`<ul><li><b>Energia:</b> acréscimo modesto a partir do 2º trimestre; o 1º trimestre praticamente não exige adicional.</li><li><b>Carboidratos:</b> principal fonte de energia e de glicose fetal; priorizar integrais e fibras (ajudam na constipação).</li><li><b>Proteínas:</b> necessidade maior para tecidos fetais, placenta, útero, mamas e expansão do sangue.</li><li><b>Lipídios:</b> qualidade importa; limitar saturados e trans e garantir ômega-3 (DHA).</li><li><b>Água:</b> o aumento do plasma e do líquido amniótico eleva a necessidade.</li></ul>`],
+["Cuidados alimentares",`<ul><li>6 refeições em intervalos curtos, incluindo lácteos, feijão, hortaliças e frutas.</li><li>Evitar álcool e tabaco (malformações, restrição de crescimento); cafeína com moderação.</li><li>Evitar carnes cruas ou malpassadas, ovos crus, queijos não pasteurizados, hortaliças mal higienizadas (toxoplasmose, listeriose, salmonelose) e peixes com muito mercúrio.</li><li>Controlar bebidas açucaradas, embutidos e ultraprocessados.</li><li>Gestantes vegetarianas: atenção a ferro, B12, zinco e cálcio.</li></ul>`]]},
+{id:"micros",g:"Gestação",t:"Micronutrientes essenciais",
+s:"A energia aumenta pouco, mas a necessidade de micronutrientes aumenta muito: a preocupação é a qualidade da dieta.",
+p:"Folato 600 µg; ferro 27 mg (2º e 3º tri); vitamina A 770 µg (excesso causa defeitos congênitos); cálcio 1000 mg (1300 mg em adolescentes); DHA 200 mg/dia.",
+sec:[
+["Tabela de recomendações",`<div class=tw><table><tr><th>Nutriente<th>Gestante<th>Não gestante</tr><tr><td>Vitamina A<td>770 µg<td>700 µg</tr><tr><td>Vitamina C<td>85 mg<td>75 mg</tr><tr><td>Folato<td>600 µg ↑<td>400 µg</tr><tr><td>Vitamina D<td>15 µg<td>15 µg</tr><tr><td>Vitamina E<td>15 µg<td>15 µg</tr><tr><td>Cálcio<td>1000 mg<td>1000 mg</tr><tr><td>Ferro<td>27 mg ↑<td>18 mg</tr><tr><td>Iodo<td>220 µg<td>150 µg</tr><tr><td>Magnésio<td>350 mg<td>310 mg</tr></table></div>`],
+["Folato e ferro",`<ul><li><b>Folato:</b> metilfolato é a forma ativa; deficiência causa defeitos do tubo neural. 600 µg = 200 da alimentação + 400 sintético. Fontes: levedo de cerveja, fígado, folhosos escuros, leguminosas.</li><li><b>Ferro:</b> expansão da massa eritrocitária, crescimento fetal/placentário. RDA 27 mg (máx. 45 mg); a OMS indica suplementação. Fontes: fígado, carnes, folhosos, feijões.</li></ul>`],
+["Vitamina D, cálcio e vitamina A",`<ul><li><b>Vit. D (deficiência):</b> hipocalcemia neonatal, hipoplasia do esmalte, osteomalácia materna.</li><li><b>Cálcio (deficiência):</b> prejuízo ao crescimento fetal, alterações de pressão, contrações e parto prematuro.</li><li><b>Vit. A:</b> desenvolvimento fetal, imunidade, placenta. Retinol (fígado, leite integral, queijos) e carotenoides (folhosos, cenoura, manga, mamão).</li></ul>`],
+["Ácidos graxos",`<ul><li><b>EPA:</b> anti-inflamatório, evita trombos, protege o coração.</li><li><b>DHA:</b> SNC fetal e retina; suplementar 200 mg/dia em gestantes e lactantes no Brasil (baixo consumo de peixes).</li></ul>`]]},
+{id:"clinica",g:"Gestação",t:"Cardápio e intercorrências",
+s:"A avaliação clínica precede a dieta. O plano tem 6 refeições em intervalos de 2 a 3 horas e adapta-se aos sintomas de cada fase.",
+p:"Lácteos 3 porções/dia; feijão ≥4×/semana; peixes 2–3×/semana. Náuseas: 1º tri. Constipação: a partir da 20ª semana.",
+sec:[
+["Arquitetura do cardápio",`<ul><li>3 porções de lácteos/dia para 1.000 mg de cálcio.</li><li>Carnes vermelhas ou brancas (ferro heme); peixes 2–3×/semana; atenção a gestantes vegetarianas.</li><li>Feijão ≥4×/semana, hortaliças e frutas diariamente.</li><li>Controlar bebidas açucaradas (inclusive sucos naturais), ultraprocessados, embutidos e carnes processadas.</li></ul>`],
+["Náuseas e vômitos (1º trimestre)",`<ul><li><b>Fazer:</b> até 8 refeições/dia, refeições em temperatura ambiente, picolé de frutas cítricas, gengibre, biscoito salgado ao levantar, vitamina B6.</li><li><b>Evitar:</b> alimentos gordurosos e temperos de odor forte.</li></ul>`],
+["Picamalácia",`<p>Ingestão persistente e compulsiva de substâncias não nutritivas. Causa multifatorial: emocional (ansiedade, estresse), nutricional (deficiência de ferro ou zinco) e ambiental (cultura, condição socioeconômica). Investigue anemia.</p>`],
+["Pirose (azia)",`<ul><li>Aumentar o número de refeições e reduzir o volume.</li><li>Mastigar bem; não ingerir líquidos junto às refeições.</li><li>Evitar grandes volumes imediatamente antes de deitar.</li></ul>`],
+["Constipação (a partir da 20ª semana)",`<ul><li><b>Priorizar:</b> água, exercício, vegetais crus, sementes, pães com fibras, ameixa seca, frutas com bagaço e casca.</li><li><b>Restringir:</b> banana, maçã e goiaba sem casca, farinhas refinadas, torradas e biscoito de água e sal.</li></ul>`]]},
+{id:"complicacoes",g:"Gestação",t:"Anemia, hipertensão e diabetes gestacional",
+s:"Doenças de alto risco materno-fetal que exigem intervenção imediata. A hipertensão é a segunda maior causa de mortalidade materna no mundo.",
+p:"Pré-eclâmpsia = hipertensão após a 20ª semana + proteinúria ≥300 mg/24 h. DMG: jejum 92–125 mg/dL; TOTG 75 g entre 24 e 28 semanas.",
+sec:[
+["Risco e pressão arterial",`<ul><li>Riscos: baixo peso ao nascer, menor suprimento de nutrientes e O2, restrição de crescimento e morte fetal.</li><li>PA normal &lt;120/80; pré-hipertensão 120–139 ou 80–89; estágio 1: 140–159 ou 90–99; estágio 2: ≥160 ou ≥100 mmHg. Confirmar em 2 ocasiões (intervalo de 4 h a 7 dias).</li></ul>`],
+["Classificação (ACOG, 2013)",`<div class=tw><table><tr><th>Condição<th>Início<th>Critério<th>Risco</tr><tr><td>Hipertensão crônica<td>Antes da gestação ou &lt;20 sem<td>Sem proteinúria<td>25% evoluem para pré-eclâmpsia</tr><tr><td>Hipertensão gestacional<td>Após 20 sem<td>Sem proteinúria<td>Diagnóstico temporário</tr><tr><td>Pré-eclâmpsia<td>Após 20 sem<td>Proteinúria ≥300 mg/24 h<td>Insuficiência placentária</tr><tr><td>Eclâmpsia<td>Após 20 sem<td>Convulsões tônico-clônicas<td>Extrema gravidade</tr><tr><td>PE sobreposta<td>Hipertensa crônica<td>Proteinúria nova ou agravada<td>Complicações severas</tr></table></div>`],
+["Anemia ferropriva e hiperêmese",`<ul><li><b>Anemia ferropriva:</b> Hb baixa com VCM/HCM reduzidos e ferritina baixa (diferente da hemodiluição fisiológica). Riscos: prematuridade, baixo peso ao nascer, fadiga materna. Conduta: fontes de ferro heme, vitamina C junto ao ferro não heme, evitar café, chá e cálcio nas refeições ricas em ferro, e suplementação.</li><li><b>Hiperêmese gravídica:</b> vômitos intensos e persistentes com perda de peso, desidratação e distúrbio hidroeletrolítico; exige avaliação médica e traz risco de deficiência de tiamina.</li></ul>`],
+["Diabetes mellitus gestacional (SBD, 2020)",`<ul><li>Definição: intolerância a carboidratos de gravidade variável que começa na gestação atual e não preenche critério de diabetes franco.</li><li><b>Pré-natal &lt;20 sem, glicemia de jejum:</b> &gt;126 = diabetes; 92–125 = DMG; &lt;92 = reavaliar entre 24 e 28 sem.</li><li><b>24–28 sem, TOTG 75 g:</b> DMG se ao menos um valor: jejum 92–125; 1ª hora &gt;180; 2ª hora 153–199 mg/dL.</li><li><b>Por que acontece:</b> lactogênio placentário e resistência à insulina.</li></ul>`]]},
+{id:"lactacao",g:"Lactação e aleitamento",t:"Anatomia e fisiologia da lactação",
+s:"O leite é produzido nos alvéolos, transportado pelos ductos e seios lactíferos até o mamilo, sob controle da prolactina e da ocitocina.",
+p:"Estrogênio = ductos; progesterona = alvéolos; prolactina = síntese; ocitocina = ejeção. Apojadura: 1 a 4 dias após o parto, com queda de progesterona e estrogênio.",
+sec:[
+["Estrutura e desenvolvimento da mama",`<ul><li>Lóbulos (unidades produtoras), ductos de leite, mamilo e aréola; o tecido mamário aumenta em média 145 mL.</li><li>Glândulas de Montgomery: proteção mecânica, imunidade local e sinalização olfativa mãe-filho.</li><li>Estágios: embriogênese, puberdade, gestação, lactação e involução.</li></ul>`],
+["Fases da lactogênese",`<div class=tw><table><tr><th>Fase<th>Quando<th>O que acontece</tr><tr><td>I: preparação<td>A partir do 2º trimestre<td>Ductos (estrogênio, GH) e alvéolos (progesterona, prolactina, lactogênio). Progesterona e estrogênio altos bloqueiam a secreção.</tr><tr><td>II: apojadura<td>Fim do trabalho de parto até 1–4 dias<td>A expulsão da placenta derruba progesterona e estrogênio; prolactina e ocitocina sobem.</tr><tr><td>III: galactopoiese<td>Pós-parto contínuo<td>Oferta e demanda: sucção estimula prolactina; leite não retirado reduz a produção.</tr></table></div>`],
+["Reflexos e fator inibidor",`<ul><li><b>Prolactina:</b> produz leite para a próxima mamada; pico nas 2 h após o parto e à noite (mamada noturna ajuda).</li><li><b>Ocitocina:</b> contrai células ao redor dos alvéolos (ejeção) e o útero (menos hemorragia). Sinais: cólica uterina, sede súbita, leite escorrendo. Ajudam: confiança, tocar e olhar o bebê. Dificultam: estresse, dor, ansiedade, vergonha, nicotina e álcool.</li><li><b>Inibidor da lactação:</b> mama cheia aumenta o inibidor e reduz a produção; esvaziar aumenta.</li></ul>`]]},
+{id:"leite",g:"Lactação e aleitamento",t:"Composição do leite materno",
+s:"O leite humano é uma matriz viva: muda entre mulheres, ao longo da lactação e do dia, e resiste bem ao estado nutricional materno (exceto na subnutrição grave).",
+p:"Maduro: 71 kcal/100 mL, lactose 7,3 g, soro:caseína 60:40. Colostro é rico em IgA, lactoferrina e vitamina A. Vitamina D é a exceção clínica.",
+sec:[
+["Estágios",`<ul><li><b>Colostro</b> (até 7 dias): viscoso, alta proteína (foco imune), pouca lactose e gordura, 58–67 kcal/100 mL (varia conforme a fonte); rico em IgA, lactoferrina, vitaminas A e E, sódio, potássio e cloro.</li><li><b>Transição:</b> 7 a 14 dias.</li><li><b>Maduro:</b> após 14–15 dias; 71 kcal/100 mL; proteína 1,2–1,5 g/dL; lactose 7 g/dL; lipídios 3,5 g/dL (97% triglicerídeos).</li></ul>`],
+["Colostro x maduro x leite de vaca",`<div class=tw><table><tr><th><th>Colostro<th>Maduro<th>Vaca</tr><tr><td>Energia (kcal)<td>67<td>71<td>68</tr><tr><td>Lactose (g)<td>5,3<td>7,3<td>4,9</tr><tr><td>Proteínas (g)<td>2,3<td>0,9<td>3,5</tr><tr><td>Soro / caseína<td>90 / 10<td>60 / 40<td>18 / 82</tr><tr><td>α-lactoalbumina (mg)<td>218<td>161<td>0</tr><tr><td>Vitamina A (µg RE)<td>89<td>47<td>29,5</tr><tr><td>Vitamina B12 (µg)<td>20,0<td>2,6<td>0,4</tr><tr><td>Sódio (mg)<td>48<td>15<td>51,5</tr></table></div><p><b>Por que importa:</b> soro é de fácil digestão e a alta lactose apoia o cérebro; a caseína do leite de vaca forma coalho mais denso.</p>`],
+["Ferro e vitaminas",`<p>Pouco ferro (0,4 µg), mas altíssima biodisponibilidade: suficiente sem sobrecarregar o metabolismo. Vitaminas hidrossolúveis dependem da dieta materna; lipossolúveis são mais altas no colostro. Todas as classes de imunoglobulinas estão presentes, com domínio da IgA. O leite tem cerca de 45 tipos de fatores bioativos.</p>`],
+["Benefícios",`<ul><li><b>Lactente:</b> menos diarreia e infecções respiratórias, previne anemia ferropriva, reduz alergias, ajuda a cavidade bucal e reduz DCNT (diabetes 1 e 2, obesidade, hipercolesterolemia, leucemia).</li><li><b>Nutriz:</b> menos hemorragia pós-parto, retorno mais rápido ao peso, efeito contraceptivo em condições específicas, menos câncer de mama e depressão pós-parto.</li></ul>`]]},
+{id:"aleitamento",g:"Lactação e aleitamento",t:"Recomendações, tipos e alimentação da nutriz",
+s:"O aleitamento materno é exclusivo até os 6 meses e continua, com alimentos complementares, até os 2 anos ou mais.",
+p:"AME = só leite materno (sem água, chás ou outros líquidos). Predominante = leite + água/chás. A nutriz não precisa de dieta especial: variada, boa hidratação, sem álcool e tabaco.",
+sec:[
+["Tipos de aleitamento",`<div class=tw><table><tr><th>Tipo<th>Definição</tr><tr><td>Exclusivo<td>Somente leite materno (direto ou ordenhado), sem outros líquidos ou sólidos</tr><tr><td>Predominante<td>Leite materno + água, chás ou sucos</tr><tr><td>Complementado<td>Leite materno + alimentos sólidos ou semissólidos</tr><tr><td>Misto<td>Leite materno + outros leites</tr></table></div><ul><li>Livre demanda: sem horários fixos; oferecer sempre que o bebê quiser.</li></ul>`],
+["Alimentação da nutriz",`<ul><li>Dieta variada e equilibrada, com aumento moderado de energia e de líquidos (beber conforme a sede).</li><li>Não há alimentos proibidos: restrições só se o bebê apresentar reação comprovada.</li><li>Evitar álcool e tabaco; cafeína com moderação; atenção a medicamentos.</li><li>Manter DHA (200 mg/dia no Brasil) e boa ingestão de vitaminas hidrossolúveis, que dependem da dieta materna.</li><li>Evitar dietas restritivas; o leite se mantém adequado, exceto na desnutrição grave.</li></ul>`]]},
+{id:"manejo",g:"Lactação e aleitamento",t:"Manejo: pega, posição e pouco leite",
+s:"O sucesso da amamentação começa em pega correta, livre demanda e esvaziamento das mamas. Ao menor sinal de problema, corrija a mecânica antes da infecção.",
+p:"Pouco ganho de peso: <20–30 g/dia (termo) ou 12–15 g/dia (pré-termo); perda >10% em 10 dias. Urina <6 vezes/dia e concentrada.",
+sec:[
+["Pega e posição",`<ul><li><b>Pega correta:</b> boca bem aberta abocanha a maior parte da aréola; língua sobre a gengiva inferior; queixo encostado na mama; ciclo sucção–deglutição–respiração.</li><li><b>Posição:</b> corpo do bebê de frente e junto ao da mãe; cabeça e coluna alinhadas; a mãe deve estar relaxada e confortável.</li><li>Só oferecer o 2º peito depois que o bebê soltar o 1º; não retirar o bebê que ainda suga.</li></ul>`],
+["Queixa de pouco leite",`<div class=tw><table><tr><th>Sinais confiáveis<th>Sinais possíveis (não confiáveis)</tr><tr><td>Pouco ganho de peso; urina pouca, concentrada, amarela e forte (&lt;6×/dia)<td>Bebê chora muito, mama muito ou por muito tempo, recusa o peito, fezes verdes ou duras; mães: mama não cresceu, leite “não desceu”</tr></table></div><ul><li><b>Conduta:</b> construir confiança, corrigir pega/posição, reforçar livre demanda, oferecer leite posterior, retirar bicos artificiais, acordar o bebê a cada 3 h, avaliar necessidade de complemento (copinho, translactação/relactação) e reavaliar semanalmente.</li><li><b>Mamadeira e chupeta:</b> confundem o aprendizado da sucção, aumentam risco de desmame e infecções.</li></ul>`]]},
+{id:"intercorrencias",g:"Lactação e aleitamento",t:"Intercorrências e situações especiais",
+s:"A maioria das intercorrências nasce de pega inadequada e esvaziamento insuficiente da mama; a conduta costuma ser corrigir a técnica e manter o esvaziamento.",
+p:"Ingurgitamento: ordenha e mamadas frequentes. Fissura: corrigir a pega. Mastite: esvaziar a mama, não desmamar. Contraindicação clássica: HIV e HTLV-1/2 na mãe; galactosemia no bebê.",
+sec:[
+["Principais intercorrências",`<div class=tw><table><tr><th>Problema<th>Causa habitual<th>Conduta</tr><tr><td>Ingurgitamento<td>Apojadura com esvaziamento insuficiente<td>Ordenha manual para amolecer a aréola, mamadas frequentes, compressas frias para alívio</tr><tr><td>Fissura<td>Pega e posição inadequadas<td>Corrigir pega; começar pela mama menos dolorida; passar o próprio leite no mamilo</tr><tr><td>Ducto obstruído<td>Esvaziamento incompleto<td>Massagem suave, mamadas frequentes, variar posições</tr><tr><td>Mastite<td>Estase láctea, com ou sem infecção<td>Manter o esvaziamento, repouso, analgesia e avaliação médica (antibiótico se indicado)</tr><tr><td>Candidíase<td>Fungo no mamilo e na boca do bebê<td>Tratar mãe e bebê</tr></table></div>`],
+["Contraindicações e situações especiais",`<ul><li><b>Contraindicam (Brasil):</b> mãe com HIV ou HTLV-1/2; bebê com galactosemia; uso de drogas ilícitas; quimioterapia/radioterapia e alguns medicamentos (avaliar caso a caso).</li><li><b>Temporárias:</b> lesão herpética na mama (não amamentar nessa mama); varicela em fase de transmissão; tuberculose bacilífera sem tratamento.</li><li><b>Não contraindicam:</b> hepatite B (bebê vacinado e com imunoglobulina), diabetes materno, resfriados e a maioria das infecções comuns.</li><li><b>Prematuros e gemelares:</b> o leite da própria mãe é prioritário; apoiar ordenha e sucção precoce.</li></ul>`]]}
+];
+
+const F=[
+["Qual peso usar para o IMC de base?","O peso pré-gestacional (antes de engravidar)."],
+["Uma gestante com sobrepeso deve perder peso?","Não. Na gestação não se deve perder peso; promover hábitos saudáveis."],
+["Recomendação de folato na gestação?","600 µg/dia (200 µg da dieta + 400 µg sintético)."],
+["RDA de ferro na gestante (2º e 3º trimestres)?","27 mg/dia (máximo 45 mg)."],
+["Risco do excesso de vitamina A?","Defeitos congênitos (teratogenia)."],
+["Dose de DHA para gestantes e lactantes no Brasil?","200 mg/dia."],
+["Por que ocorre constipação na gestação?","A progesterona relaxa o músculo liso e reduz o peristaltismo (a partir da 20ª semana)."],
+["Diferença entre pré-eclâmpsia e hipertensão gestacional?","Pré-eclâmpsia tem proteinúria (≥300 mg/24 h); a gestacional não."],
+["Critério de DMG na glicemia de jejum?","92 a 125 mg/dL (≥126 = diabetes)."],
+["Por que o leite não é produzido durante a gestação?","Progesterona e estrogênio altos inibem a ação final da prolactina; caem após a expulsão da placenta."],
+["Qual hormônio produz e qual ejeta o leite?","Prolactina produz (hipófise anterior); ocitocina ejeta (hipófise posterior)."],
+["O que é o fator inibidor da lactação?","Substância no leite que reduz a produção quando a mama fica cheia."],
+["Relação soro:caseína do leite maduro e do leite de vaca?","60:40 no humano; 18:82 no de vaca."],
+["Quais sinais confiáveis de pouco leite?","Pouco ganho de peso e urina escassa e concentrada (<6×/dia)."],
+["Até quando o aleitamento é exclusivo e até quando deve continuar?","Exclusivo até 6 meses; complementado até 2 anos ou mais."],
+["O que caracteriza o colostro?","Viscoso, rico em proteínas e IgA, com menos lactose e gordura; produzido até cerca de 7 dias."],
+["Qual a causa mais comum de fissura mamilar?","Pega e/ou posição inadequadas."],
+["Sinais de pega correta?","Boca bem aberta, mais aréola visível acima, lábio inferior evertido, queixo na mama, sucção lenta e profunda."],
+["Anemia fisiológica x ferropriva?","Fisiológica: hemodiluição, VCM/HCM normais. Ferropriva: microcitose e ferritina baixa."],
+["Qual infecção materna contraindica a amamentação no Brasil?","HIV (e HTLV-1/2)."]
+];
+
+/* Banco: ["c"|"a", "G"|"L", enunciado, alternativas|espelho, índice correto, explicação] */
+const B=[
+["c","G","Gestante de 20 semanas, assintomática, tem Hb de 10,8 g/dL com VCM e HCM normais e ferritina adequada. A interpretação mais coerente é:",["Anemia ferropriva instalada, com indicação de dose terapêutica de ferro","Hemodiluição fisiológica, pois o plasma cresce mais que a massa de hemácias","Anemia megaloblástica por deficiência de folato","Hemólise causada pela progesterona"],1,"O plasma aumenta cerca de 50% e a massa de hemoglobina cerca de 20%, reduzindo a concentração de Hb sem alterar os índices hematimétricos. Na ferropriva haveria microcitose e ferritina baixa."],
+["c","G","A suplementação de ácido fólico é enfatizada antes da concepção e no início da gestação principalmente para:",["Prevenir defeitos de fechamento do tubo neural","Aumentar a massa eritrocitária no 3º trimestre","Reduzir isoladamente o risco de pré-eclâmpsia","Prevenir a hipocalcemia neonatal"],0,"O tubo neural fecha nas primeiras semanas, muitas vezes antes de a mulher saber que está grávida. A recomendação é de 600 µg/dia, com 400 µg sintéticos."],
+["c","G","A maior resistência à insulina no fim da gestação, que poupa glicose para o feto, deve-se principalmente a:",["Aumento da HCG","Ação de hormônios placentários, como o lactogênio placentário","Queda da progesterona","Aumento da ação da insulina mediado pelo estrogênio"],1,"O lactogênio placentário antagoniza a insulina; por isso a gestação é diabetogênica e sustenta o risco de DMG."],
+["c","G","Gestante de 26 semanas queixa-se de constipação. Qual associação entre mecanismo e conduta é mais adequada?",["Aumento do ferro sérico; suspender frutas e verduras","Hemodiluição; prescrever laxativos de rotina","Redução da motilidade intestinal pela progesterona; aumentar água, fibras e atividade física","Excesso de HCl gástrico; reduzir líquidos"],2,"A progesterona relaxa a musculatura lisa e torna o cólon lento. A conduta inicial é dietética: água, fibras, frutas com casca e bagaço, ameixa e exercício."],
+["c","G","Para gestante no 1º trimestre com náuseas matinais, a orientação mais adequada é:",["Manter jejum prolongado até o enjoo passar","Concentrar a dieta em frituras para aumentar a densidade calórica","Fracionar em pequenas refeições, preferir alimentos em temperatura ambiente e evitar gordurosos e odores fortes","Oferecer refeições muito quentes e bem temperadas"],2,"O olfato aumenta no 1º trimestre e o jejum piora o enjoo. Gordura e odores fortes pioram os sintomas."],
+["c","G","Gestante com obesidade pré-gestacional deseja emagrecer durante a gravidez. A conduta mais adequada é:",["Restrição calórica severa, pois a reserva materna sustenta o feto","Suspender carboidratos a partir do 2º trimestre","Orientar hábitos saudáveis e ganho de peso adequado à categoria de IMC, sem perda de peso","Dispensar acompanhamento, pois o risco é menor"],2,"Na gestação não se deve perder peso, mesmo com sobrepeso ou obesidade; o ganho recomendado é menor, mas ainda existe."],
+["c","G","O ganho de peso gestacional insuficiente está mais associado a:",["Macrossomia e distocia","Restrição de crescimento fetal e baixo peso ao nascer","Diabetes gestacional por resistência à insulina","Retenção de peso no pós-parto"],1,"Ganho insuficiente reduz a oferta de nutrientes ao feto. Macrossomia, DMG e retenção pós-parto se associam ao ganho excessivo."],
+["c","G","Ganho de peso acima do recomendado aumenta o risco de:",["Defeitos do tubo neural","Macrossomia, diabetes gestacional, hipertensão e retenção de peso no pós-parto","Bócio neonatal","Hemodiluição excessiva com anemia ferropriva"],1,"O excesso de ganho se associa a desfechos metabólicos e obstétricos desfavoráveis para mãe e bebê."],
+["c","G","Por que se recomenda cautela com suplementos de vitamina A (retinol) em doses elevadas na gestação?",["Reduzem a absorção do ferro","Aumentam a resistência à insulina","Provocam hipocalcemia materna","Podem causar malformações congênitas"],3,"O excesso de vitamina A é teratogênico. Carotenoides de folhosos e frutas não trazem esse risco."],
+["c","G","Qual refeição favorece melhor a absorção do ferro não heme?",["Feijão com arroz e uma xícara de café","Feijão com arroz e suco de laranja","Feijão com queijo","Feijão com arroz e chá-mate"],1,"A vitamina C favorece a absorção do ferro não heme; polifenóis do café e do chá e o cálcio dos lácteos a reduzem."],
+["c","G","A ingestão inadequada de cálcio na gestação relaciona-se principalmente a:",["Defeitos do tubo neural","Anemia megaloblástica","Distúrbios hipertensivos, parto prematuro e prejuízo à mineralização óssea","Bócio neonatal"],2,"O cálcio participa do controle da pressão e da contração uterina, além da mineralização do esqueleto fetal. Metas: cerca de 3 porções de lácteos por dia."],
+["c","G","O iodo é especialmente importante no início da gestação porque:",["Aumenta a absorção do ferro heme","O feto depende do hormônio tireoidiano materno, essencial ao neurodesenvolvimento","Previne a hipertensão gestacional","Regula a glicemia materna"],1,"Nos primeiros meses o feto depende 100% da tireoide materna; a demanda de iodo aumenta na gestação."],
+["c","G","Gestante de 30 semanas, sem hipertensão prévia, apresenta PA de 150/100 mmHg confirmada e proteinúria de 24 h de 400 mg. O diagnóstico mais provável é:",["Hipertensão gestacional","Hipertensão crônica","Eclâmpsia","Pré-eclâmpsia"],3,"Hipertensão após 20 semanas com proteinúria ≥300 mg/24 h define pré-eclâmpsia. Sem proteinúria seria gestacional; com convulsões, eclâmpsia."],
+["c","G","Gestante de 10 semanas tem glicemia de jejum de 98 mg/dL na primeira consulta. Esse resultado indica:",["Normalidade, sem necessidade de reavaliação","Diabetes mellitus franco","Diabetes mellitus gestacional","Necessidade de repetir somente após o parto"],2,"No início do pré-natal, 92–125 mg/dL = DMG; ≥126 = diabetes prévio; <92 = reavaliar entre 24 e 28 semanas."],
+["c","G","Uma agressão nutricional grave na fase de hiperplasia do desenvolvimento fetal tende a:",["Reduzir o tamanho das células, com fácil recuperação","Reduzir o número de células, com efeito mais duradouro","Não ter consequência, pois a placenta compensa","Aumentar o número de adipócitos"],1,"Na hiperplasia a falta de nutrientes reduz o número de células, o que é menos recuperável do que a redução do tamanho na hipertrofia."],
+["c","G","Gestante refere desejo compulsivo de comer terra e gelo. Qual investigação é prioritária?",["Hipervitaminose A","Deficiência de ferro e anemia","Excesso de cálcio","Hipotireoidismo por excesso de iodo"],1,"A picamalácia é multifatorial (emocional, nutricional, cultural), mas se associa à deficiência de ferro e zinco; investigue anemia."],
+["c","G","Qual orientação faz parte da prevenção de infecções alimentares na gestação?",["Evitar carnes cruas ou malpassadas e queijos não pasteurizados","Excluir feijões e folhosos cozidos","Preferir ovos crus por serem mais nutritivos","Consumir leite não pasteurizado por ser natural"],0,"Alimentos crus e não pasteurizados aumentam o risco de toxoplasmose, listeriose e salmonelose."],
+["c","G","Ureia e creatinina séricas dentro da referência de uma mulher não gestante, em gestante de 28 semanas, devem ser interpretadas como:",["Achado esperado, sem necessidade de atenção","Possível redução da função renal, pois a filtração glomerular aumenta e esses valores normalmente caem","Sinal de hemodiluição excessiva","Indicativo de deficiência proteica"],1,"O fluxo renal e a filtração glomerular aumentam na gestação; valores 'normais' de não gestante podem indicar comprometimento."],
+["c","L","Nutriz relata que o leite começa a escorrer quando ouve o choro do bebê. Esse fenômeno reflete a ação principal de qual hormônio?",["Prolactina, que produz o leite","Estrogênio, que desenvolve os ductos","Progesterona, que desenvolve os alvéolos","Ocitocina, que promove a ejeção"],3,"A ocitocina contrai as células ao redor dos alvéolos e responde a estímulos emocionais; a prolactina atua na síntese."],
+["c","L","A orientação de manter mamadas noturnas para sustentar a produção de leite baseia-se em que:",["A ocitocina só é secretada à noite","A progesterona aumenta à noite","O fator inibidor cai durante o sono","A prolactina tem pico noturno e a sucção estimula sua liberação"],3,"A prolactina é estimulada pela sucção e tem pico à noite; ela produz o leite da próxima mamada."],
+["c","L","A apojadura ocorre entre 1 e 4 dias após o parto porque:",["Aumenta a progesterona placentária","Caem progesterona e estrogênio após a saída da placenta, liberando a ação da prolactina","Aumenta o fator inibidor da lactação","O bebê passa a sugar com mais força"],1,"Durante a gestação esses hormônios bloqueiam a secreção; a expulsão da placenta retira o bloqueio."],
+["c","L","Uma mãe passa a espaçar as mamadas e fica com as mamas cheias por muitas horas. O que tende a ocorrer com a produção de leite?",["Aumenta, pelo maior acúmulo","Permanece igual, pois depende só da alimentação materna","Aumenta a ocitocina e, com ela, a produção","Reduz, pelo acúmulo do fator inibidor da lactação e menor estímulo à prolactina"],3,"A lactação funciona por oferta e demanda: leite não retirado reduz a produção."],
+["c","L","Em comparação com o leite maduro, o colostro apresenta:",["Menos proteínas e mais lactose","Mais gordura e menos anticorpos","Mais proteínas e imunoglobulinas (IgA) e menos lactose e gordura","Composição idêntica, mudando só o volume"],2,"O colostro tem foco imunológico: IgA, lactoferrina, vitaminas A e E, com menos lactose e gordura."],
+["c","L","A relação soro:caseína de 60:40 do leite humano maduro, comparada à do leite de vaca (18:82), contribui para:",["Formação de coalho mais denso no estômago","Digestão mais fácil e esvaziamento gástrico mais rápido","Maior teor de proteína total","Maior sobrecarga de solutos renais"],1,"As proteínas do soro são de fácil digestão; a caseína do leite de vaca forma coalho mais denso."],
+["c","L","Por que se orienta esvaziar bem uma mama antes de oferecer a outra?",["O leite inicial é mais rico em proteína","O leite do final da mamada é mais gorduroso e calórico, favorecendo saciedade e ganho de peso","Para reduzir a produção de prolactina","Para evitar excesso de ocitocina"],1,"O leite posterior tem mais gordura. Só se oferece o 2º peito depois que o bebê soltar o 1º."],
+["c","L","Lactente de 4 meses recebe leite materno e chá de camomila. Qual a classificação do aleitamento?",["Exclusivo","Complementado","Predominante","Misto"],2,"Exclusivo: só leite materno. Predominante: leite materno mais água ou bebidas à base de água, como chás."],
+["c","L","Mãe de bebê de 5 meses pergunta se deve iniciar alimentos e água agora, porque 'o leite está fraco'. A orientação correta é:",["Iniciar água e sucos, mantendo o leite","Trocar por fórmula infantil até os 6 meses","Manter o aleitamento exclusivo até os 6 meses, corrigindo a técnica se houver queixa real","Iniciar papas de frutas e cereais a partir de agora"],2,"A recomendação é AME até 6 meses e continuidade, com alimentos complementares, até 2 anos ou mais."],
+["c","L","Qual conjunto descreve uma pega adequada?",["Boca pouco aberta, lábios para dentro e mamilo na ponta da língua","Boca bem aberta, mais aréola coberta pela parte inferior, lábio inferior evertido e queixo tocando a mama","Bochechas encovadas e estalos durante a sucção","Somente o mamilo dentro da boca, com o bebê de lado"],1,"Estalos e bochechas encovadas indicam pega incorreta."],
+["c","L","A causa mais comum de fissuras mamilares é:",["Uso de sutiã de amamentação","Produção excessiva de leite","Amamentação em livre demanda","Pega e/ou posicionamento inadequados"],3,"Corrigir a pega é a principal medida de tratamento e prevenção."],
+["c","L","Nutriz no 4º dia pós-parto com mamas tensas, dolorosas e ingurgitadas. Qual conduta é mais indicada?",["Suspender temporariamente a amamentação","Compressas quentes prolongadas e restrição de líquidos","Ordenhar manualmente o suficiente para amolecer a aréola e manter mamadas frequentes","Amarrar as mamas com faixa apertada"],2,"O esvaziamento é a base do tratamento; a mama tensa dificulta a pega."],
+["c","L","Diante de mastite (mama dolorida, hiperemiada e febre), a orientação sobre a amamentação é:",["Interromper definitivamente até a cura","Manter o esvaziamento da mama afetada, com repouso, analgesia e avaliação médica","Amamentar só na mama sadia por 7 dias","Substituir por fórmula em todas as mamadas"],1,"A estase láctea agrava o quadro; a mastite não contraindica a amamentação."],
+["c","L","Qual situação materna contraindica a amamentação?",["Diabetes mellitus gestacional","Hepatite B com o bebê vacinado e com imunoglobulina","Infecção pelo HIV","Resfriado comum"],2,"No Brasil, HIV e HTLV-1/2 são contraindicações; os demais exemplos não contraindicam."],
+["c","L","Mãe acha que o leite é fraco porque o bebê chora muito e mama várias vezes ao dia. Qual dado indica de forma mais confiável leite insuficiente?",["Choro frequente","Mamadas longas","Fezes esverdeadas","Pouco ganho de peso e urina escassa e concentrada"],3,"Choro, mamadas frequentes e fezes verdes são sinais possíveis, mas não confiáveis."],
+["c","L","Qual orientação é adequada para a alimentação da nutriz?",["Restringir alimentos que causam gases, como feijão","Alimentação variada e hidratação conforme a sede, evitando álcool e tabaco","Jejum para perda rápida de peso","Excluir leite e ovos preventivamente"],1,"Não há alimentos proibidos de rotina; dietas restritivas prejudicam a mãe."],
+["c","L","Qual benefício materno da amamentação decorre da liberação de ocitocina?",["Maior produção de prolactina","Aumento da lactose do leite","Bloqueio da ovulação pela progesterona","Redução do sangramento pós-parto pela contração uterina"],3,"A ocitocina contrai o útero, favorecendo a involução e reduzindo hemorragia."],
+["a","G","Explique a hemodiluição da gestação e como diferenciá-la da anemia ferropriva.","Volume plasmático aumenta cerca de 50% e a massa de hemoglobina cerca de 20%, reduzindo a concentração de Hb (cerca de 20%) e o Ht (cerca de 15%). Na anemia fisiológica VCM e HCM são normais e a ferritina é adequada. Na ferropriva há microcitose/hipocromia e ferritina baixa, exigindo suplementação e orientação alimentar."],
+["a","G","Cite os principais hormônios placentários e suas repercussões nutricionais.","HCG: sustenta a gestação inicial. Progesterona: relaxa o músculo liso (refluxo, constipação, maior absorção) e prepara as mamas. Estrogênio: elasticidade uterina e menor concentração de proteínas séricas. Lactogênio placentário: antagoniza a insulina, poupando glicose ao feto e favorecendo DMG. Hormônios tireoidianos: metabolismo, com dependência do iodo materno."],
+["a","G","Por que a suplementação de folato é enfatizada no início da gestação? Cite fontes alimentares.","O tubo neural fecha nas primeiras semanas, e a deficiência causa defeitos do tubo neural. Recomendação: 600 µg/dia (cerca de 200 µg da dieta e 400 µg sintéticos), iniciando antes da concepção e mantendo ao menos até o fim do 1º trimestre. Fontes: folhosos escuros, leguminosas, fígado, levedo e cereais fortificados."],
+["a","G","Por que a necessidade de ferro aumenta na gestação? Cite fontes e fatores que interferem na absorção.","Aumenta pela expansão da massa eritrocitária e pelo crescimento fetal e placentário (27 mg/dia no 2º e 3º trimestres). Fontes: carnes e fígado (heme); feijões e folhosos (não heme). Vitamina C favorece a absorção; café, chá, cálcio e fitatos reduzem. A deficiência aumenta risco de anemia, prematuridade e baixo peso."],
+["a","G","Explique por que o ganho de peso gestacional deve ser monitorado e quais os riscos do ganho insuficiente e do excessivo.","O ganho reflete o estado nutricional e influencia os desfechos. Insuficiente: restrição de crescimento, baixo peso ao nascer, prematuridade. Excessivo: macrossomia, DMG, hipertensão e retenção de peso pós-parto. A meta depende do IMC pré-gestacional, acompanhada na curva da Caderneta da Gestante; na obesidade o ganho é menor, mas nunca se prescreve perda de peso."],
+["a","G","Descreva orientações nutricionais para náuseas, pirose e constipação na gestação.","Náuseas: fracionar (até 8 refeições), alimentos em temperatura ambiente, gengibre, biscoito salgado ao acordar, evitar gordurosos e odores fortes. Pirose: refeições menores e mais frequentes, mastigar bem, líquidos fora das refeições, evitar deitar logo após comer. Constipação (progesterona reduz o peristaltismo): água, fibras, frutas com casca e bagaço, ameixa e atividade física."],
+["a","G","Diferencie hipertensão crônica, hipertensão gestacional, pré-eclâmpsia e eclâmpsia. Qual o papel do nutricionista?","Crônica: antes da gestação ou antes de 20 semanas. Gestacional: após 20 semanas, sem proteinúria. Pré-eclâmpsia: após 20 semanas com proteinúria (≥300 mg/24 h). Eclâmpsia: convulsões tônico-clônicas. O nutricionista identifica o risco, orienta dieta equilibrada com cálcio adequado, acompanha o ganho de peso e encaminha precocemente."],
+["a","G","Defina diabetes mellitus gestacional, explique sua fisiopatologia e a conduta nutricional conceitual.","É a intolerância a carboidratos que se inicia na gestação. Decorre da resistência à insulina causada por hormônios placentários, como o lactogênio. Diagnóstico: glicemia de jejum de 92–125 mg/dL no início do pré-natal ou TOTG 75 g entre 24 e 28 semanas. Conduta: fracionamento, carboidratos complexos e fibras, evitar açúcares simples, atividade física e monitorização. Risco: macrossomia."],
+["a","L","Descreva as fases da lactogênese e o papel da prolactina e da ocitocina.","Fase I (a partir do 2º trimestre): desenvolvimento de ductos (estrogênio) e alvéolos (progesterona, prolactina); hormônios altos bloqueiam a secreção. Fase II (apojadura, 1–4 dias): a saída da placenta derruba progesterona e estrogênio e libera a prolactina. Fase III (galactopoiese): manutenção por oferta e demanda. Prolactina produz o leite (pico à noite); ocitocina promove a ejeção e contrai o útero; estresse e dor inibem a ocitocina."],
+["a","L","Compare colostro, leite de transição e leite maduro quanto à composição e à importância.","Colostro (até cerca de 7 dias): rico em proteínas, IgA, lactoferrina e vitaminas A e E, com pouca lactose e gordura. Transição (7–14 dias): aumento de lactose, gordura e volume. Maduro: cerca de 71 kcal/100 mL, lactose em torno de 7 g/dL, soro:caseína 60:40 e fatores bioativos. O leite se adapta às necessidades do bebê e é bem digerido."],
+["a","L","Descreva a pega e o posicionamento corretos e as consequências de uma pega inadequada.","Pega: boca bem aberta, mais aréola visível acima, lábio inferior evertido, queixo tocando a mama, sucção lenta e profunda. Posição: bebê de frente, barriga com barriga, cabeça e coluna alinhadas, mãe confortável. Pega inadequada causa fissuras, ingurgitamento, esvaziamento ineficiente, baixo ganho de peso e desmame precoce."],
+["a","L","Justifique o aleitamento exclusivo até os 6 meses e sua continuidade até os 2 anos ou mais, citando benefícios para mãe e bebê.","O leite materno supre as necessidades do bebê até 6 meses; depois segue como fonte de energia, nutrientes e imunidade, junto aos alimentos complementares. Bebê: menos diarreia, infecções respiratórias, alergias e anemia, menor risco de DCNT. Mãe: menos hemorragia pós-parto, retorno mais rápido ao peso, menor risco de câncer de mama e depressão pós-parto, efeito contraceptivo em condições específicas."],
+["a","L","Quais orientações alimentares devem ser dadas à nutriz?","Dieta variada, com aumento moderado de energia e de líquidos conforme a sede; sem restrições de rotina. Evitar álcool e tabaco, moderar cafeína, manter DHA (200 mg/dia) e evitar dietas restritivas. A qualidade do leite é preservada, exceto na desnutrição grave. Observar sinais de deficiências (ferro, B12, vitaminas hidrossolúveis)."],
+["a","L","Explique causa e manejo do ingurgitamento, da fissura e da mastite.","Ingurgitamento: esvaziamento insuficiente na apojadura; ordenha manual para amolecer a aréola e mamadas frequentes. Fissura: pega inadequada; corrigir técnica e proteger o mamilo com o próprio leite. Mastite: estase láctea com ou sem infecção; manter o esvaziamento, repouso, analgesia e avaliação médica. Em todas, não suspender a amamentação."],
+["a","L","Cite contraindicações e situações especiais da amamentação.","Contraindicam: HIV e HTLV-1/2 na mãe, galactosemia no bebê, uso de drogas ilícitas, quimioterapia/radioterapia e alguns medicamentos. Temporárias: lesão herpética na mama e varicela em fase de transmissão. Não contraindicam: hepatite B (bebê vacinado com imunoglobulina), diabetes e resfriado. Em prematuros, prioriza-se o leite da própria mãe."]
+];
+
+/* ===================== Utilidades e estado ===================== */
+const $=s=>document.querySelector(s);
+const ld=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let done=ld("p1_done",[]),rev=ld("p1_rev",[]),wrong=ld("p1_wrong",[]);
+const main=$("#main");
+const strip=h=>h.replace(/<[^>]+>/g," ").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/\s+/g," ");
+T.forEach(t=>t.txt=strip(t.t+" "+t.s+" "+t.p+" "+t.sec.map(s=>s[0]+" "+s[1]).join(" ")));
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+/* ===================== Menu lateral ===================== */
+function buildSide(cur,filter){
+  const groups=[...new Set(T.map(t=>t.g))];
+  const pct=Math.round(done.length/T.length*100);
+  let h=`<a href="#/inicio" class="${cur=="inicio"?"on":""}">Início</a><a href="#/flashcards" class="${cur=="flashcards"?"on":""}">Flashcards</a><a href="#/simulado" class="${cur=="simulado"?"on":""}">Simulado</a><a href="#/banco" class="${cur=="banco"?"on":""}">Banco de questões</a><a href="#/revisao" class="${cur=="revisao"?"on":""}">Revisão (${rev.length+wrong.length})</a><div class=bar><i style="width:${pct}%"></i></div><small>${done.length} de ${T.length} assuntos estudados</small>`;
+  groups.forEach(g=>{
+    const l=T.filter(t=>t.g==g&&(!filter||filter.includes(t.id)));
+    if(l.length)h+=`<h3>${g}</h3>`+l.map(t=>`<a href="#/${t.id}" class="${cur==t.id?"on":""} ${done.includes(t.id)?"ok":""}">${t.t}</a>`).join("");
+  });
+  $("#side").innerHTML=h;
+}
+
+/* ===================== Views ===================== */
+function home(){
+  const groups=[...new Set(T.map(t=>t.g))];
+  return `<p class=crumb>Nutrição · UNINASSAU</p><h1>Materno-Infantil: 1ª prova</h1><p>Revisão enxuta de Gestação e Lactação/Aleitamento materno, com resumos, flashcards, simulados e banco de questões.</p><div class="call sum"><b>Escopo</b><p>Só conteúdo teórico das duas áreas, sem cálculos. O conteúdo completo da 2ª prova ficará em versão separada.</p></div>
+  <div class=tl aria-label="Linha do tempo"><div class=a>1º tri</div><div class=b>2º tri</div><div class=c>3º tri</div><div class=d>Lactação</div></div><small>40 semanas de gestação e, em seguida, o período de lactação.</small>
+  <div class=stats><div><b>${T.length}</b>assuntos</div><div><b>${F.length}</b>flashcards</div><div><b>${B.length}</b>questões</div><div><b>${Math.round(done.length/T.length*100)}%</b>concluído</div></div>
+  <div class=row><a class="btn pri" href="#/${T[0].id}">Começar a estudar</a><a class=btn href="#/flashcards">Flashcards</a><a class=btn href="#/simulado">Simulado</a><a class=btn href="#/banco">Banco de questões</a></div>`+
+  groups.map(g=>`<h2 style="margin-top:28px">${g}</h2><div class=grid>${T.filter(t=>t.g==g).map(t=>`<a class=tc href="#/${t.id}"><b>${t.t}</b><span>${t.s.slice(0,90)}…</span></a>`).join("")}</div>`).join("");
+}
+function topic(t){
+  const i=T.indexOf(t),pv=T[i-1],nx=T[i+1];
+  return `<article><p class=crumb>${t.g}</p><h1>${t.t}</h1>
+  <div class="call sum"><b>Resumo rápido</b><p>${t.s}</p></div><div class="call exam"><b>Cai em prova</b><p>${t.p}</p></div>
+  <div class=tools><button data-a=all>Expandir tudo</button><button data-a=none>Recolher tudo</button><button class=pri data-a=done data-id="${t.id}">${done.includes(t.id)?"✓ Estudado":"Marcar como estudado"}</button></div>
+  ${t.sec.map((s,k)=>`<details ${k==0?"open":""}><summary>${s[0]}</summary><div class=bd>${s[1]}</div></details>`).join("")}
+  <nav class=pn aria-label="Navegação entre assuntos">${pv?`<a href="#/${pv.id}">Anterior: ${pv.t}</a>`:"<span></span>"}${nx?`<a href="#/${nx.id}">Próximo: ${nx.t}</a>`:`<a href="#/flashcards">Ir para os flashcards</a>`}</nav></article>`;
+}
+/* Flashcards */
+let fl={order:F.map((_,i)=>i),i:0,flip:false,only:false};
+function flash(){
+  const ids=fl.only?fl.order.filter(i=>rev.includes(i)):fl.order;
+  const tog=`<label><input type=checkbox data-a=only ${fl.only?"checked":""}> Só cartões para revisar (${rev.length})</label>`;
+  if(!ids.length)return `<h1>Flashcards</h1><p>${tog}</p><div class=call sum>Nenhum cartão marcado para revisão. Desmarque o filtro ou marque cartões com “Revisar depois”.</div>`;
+  if(fl.i>=ids.length)fl.i=0;
+  const id=ids[fl.i];
+  return `<h1>Flashcards</h1><p>${tog}</p><p>Cartão ${fl.i+1} de ${ids.length}</p>
+  <div class="fc ${fl.flip?"back":""}" tabindex=0 role=button data-a=flip aria-label="Virar cartão"><div>${fl.flip?F[id][1]:F[id][0]}<small>${fl.flip?"Resposta":"Toque para ver a resposta"}</small></div></div>
+  <div class=row><button class=btn data-a=fprev>Anterior</button><button class=btn data-a=flip>Virar</button><button class=btn data-a=fnext>Próximo</button><button class=btn data-a=shuf>Embaralhar</button></div>
+  <div class=row style="margin-top:10px"><button class="btn pri" data-a=know data-id=${id}>Já sei</button><button class=btn data-a=later data-id=${id}>${rev.includes(id)?"Marcado para revisão":"Revisar depois"}</button></div>`;
+}
+/* Simulado */
+const LT=["A","B","C","D"];
+const addW=n=>{if(!wrong.includes(n)){wrong.push(n);sv("p1_wrong",wrong)}};
+function pick(arr,n){const g=arr.filter(i=>B[i][1]=="G"),l=arr.filter(i=>B[i][1]=="L"),r=[];let t=Math.random()<.5;while(r.length<n&&(g.length||l.length)){const s=(t?g:l).length?(t?g:l):(t?l:g);r.push(s.shift());t=!t}return r}
+let sm=null;
+function mkSim(){
+  let seen=ld("p1_seen",[]);
+  const all=B.map((_,i)=>i),ord=a=>shuffle(a).sort((x,y)=>seen.includes(x)-seen.includes(y));
+  const cl=pick(ord(all.filter(i=>B[i][0]=="c")),7),op=pick(ord(all.filter(i=>B[i][0]=="a")),3);
+  seen=seen.concat(cl,op);if(seen.length>=B.length)seen=[];sv("p1_seen",seen);
+  return{qs:shuffle(cl.concat(op)).map(i=>({i,p:B[i][0]=="c"?shuffle([0,1,2,3]):null})),i:0,ans:null,txt:"",show:false,self:null,cs:0,os:0};
+}
+function sim(){
+  if(!sm)return `<h1>Simulado</h1><p>Cada simulado sorteia 10 questões do banco (7 fechadas e 3 discursivas), misturando Gestação e Lactação. Questões e alternativas são embaralhadas, e o sorteio prioriza as que você ainda não viu.</p><button class="btn pri" data-a=sstart>Iniciar simulado</button>`;
+  if(sm.i>=sm.qs.length){
+    const t=Math.round((sm.cs+sm.os)/10*100);
+    return `<h1>Resultado</h1><div class=stats><div><b>${sm.cs}/7</b>acertos nas fechadas</div><div><b>${Math.round(sm.cs/7*100)}%</b>aproveitamento nas fechadas</div><div><b>${String(sm.os).replace(".",",")}/3</b>discursivas (autoavaliação)</div><div><b>${t}%</b>aproveitamento geral</div></div><p>Questões erradas ou parciais foram salvas na aba Revisão.</p><div class=row><button class="btn pri" data-a=sstart>Novo simulado</button><a class=btn href="#/revisao">Ver revisão</a></div>`;
+  }
+  const s=sm.qs[sm.i],q=B[s.i],last=sm.i+1>=sm.qs.length;
+  const head=`<p class=crumb>Questão ${sm.i+1} de 10 · ${q[0]=="c"?"Fechada":"Discursiva"} · ${q[1]=="G"?"Gestação":"Lactação"}</p><h2 style="font-size:1.2rem">${q[2]}</h2>`;
+  if(q[0]=="c"){
+    const ops=s.p.map((k,pos)=>{let c="";if(sm.ans!==null){if(k==q[4])c="ok";else if(k==sm.ans)c="no"}
+      return `<button class="op ${c}" data-a=sopt data-k=${k} ${sm.ans!==null?"disabled":""}>${LT[pos]}) ${q[3][k]}</button>`}).join("");
+    return head+`<div role=group>${ops}</div>`+(sm.ans!==null?`<div class=ex><b>${sm.ans==q[4]?"Correto.":"Incorreto."}</b> Gabarito: ${LT[s.p.indexOf(q[4])]}. ${q[5]}</div><button class="btn pri" data-a=snext>${last?"Ver resultado":"Próxima questão"}</button>`:"");
+  }
+  const sb=v=>`<button class="btn ${sm.self===v?"pri":""}" data-a=sself data-v=${v}>`;
+  return head+`<textarea id=ta rows=7 placeholder="Escreva sua resposta antes de ver o espelho…" ${sm.show?"readonly":""}>${sm.txt.replace(/</g,"&lt;")}</textarea>`+(!sm.show
+    ?`<div class=row style="margin-top:10px"><button class="btn pri" data-a=sshow>Ver espelho de correção</button></div>`
+    :`<div class=ex><b>Espelho de correção</b><p>${q[3]}</p></div><p><b>Como você se saiu?</b></p><div class=row>${sb(1)}Acertei</button>${sb(0.5)}Acertei em parte</button>${sb(0)}Errei</button></div>`+(sm.self!==null?`<div class=row style="margin-top:12px"><button class="btn pri" data-a=snext>${last?"Ver resultado":"Próxima questão"}</button></div>`:""));
+}
+/* Banco de questões */
+let bk={t:"all",g:"all"};
+function bank(){
+  const idx=B.map((_,i)=>i).filter(i=>(bk.t=="all"||B[i][0]==bk.t)&&(bk.g=="all"||B[i][1]==bk.g));
+  const ch=(k,v,l)=>`<button class="btn ${bk[k]==v?"pri":""}" data-a=bf data-k=${k} data-v=${v}>${l}</button>`;
+  return `<h1>Banco de questões</h1><p>${B.length} questões (35 fechadas e 15 discursivas). Os simulados são sorteados daqui. Tente responder antes de abrir o gabarito.</p><div class=row>${ch("t","all","Todas")}${ch("t","c","Fechadas")}${ch("t","a","Discursivas")}</div><div class=row style="margin-top:8px">${ch("g","all","Os dois temas")}${ch("g","G","Gestação")}${ch("g","L","Lactação")}</div><p>${idx.length} questão(ões) exibida(s).</p>`+idx.map(i=>{
+    const q=B[i];
+    const body=q[0]=="c"
+      ?`<ol type=A>${q[3].map(o=>`<li>${o}</li>`).join("")}</ol><details><summary>Ver gabarito</summary><div class=bd><b>${LT[q[4]]}.</b> ${q[5]}</div></details>`
+      :`<textarea rows=5 placeholder="Escreva sua resposta…"></textarea><details style="margin-top:10px"><summary>Ver espelho de correção</summary><div class=bd>${q[3]}</div></details>`;
+    return `<details><summary><span>Q${i+1}. ${q[2]}</span></summary><div class=bd><small>${q[1]=="G"?"Gestação":"Lactação"} · ${q[0]=="c"?"Fechada":"Discursiva"}</small>${body}</div></details>`}).join("");
+}
+/* Revisão */
+function review(){
+  const c=rev.map(i=>`<div class=rv><b>${F[i][0]}</b><p>${F[i][1]}</p><button class=btn data-a=rm data-id=${i}>Remover</button></div>`).join("");
+  const w=wrong.map(n=>{const q=B[n];return `<div class=rv><b>${q[2]}</b><p>${q[0]=="c"?"Resposta: "+q[3][q[4]]+". "+q[5]:"Espelho: "+q[3]}</p><button class=btn data-a=rmq data-id=${n}>Remover</button></div>`}).join("");
+  return `<h1>Revisão</h1><p>Cartões marcados e questões erradas ficam aqui (salvos neste aparelho).</p>
+  <h2>Flashcards para revisar (${rev.length})</h2>${c||"<p>Nada por aqui ainda.</p>"}${rev.length?`<button class="btn pri" data-a=revgo>Estudar estes cartões</button>`:""}
+  <h2 style="margin-top:24px">Questões para rever (${wrong.length})</h2>${w||"<p>Nenhuma questão por aqui.</p>"}`;
+}
+function results(q){
+  const k=norm(q),r=T.filter(t=>norm(t.txt).includes(k));
+  buildSide("",r.map(t=>t.id));
+  const hl=s=>{const i=norm(s).indexOf(k);return i<0?s:s.slice(0,i)+"<mark>"+s.slice(i,i+q.length)+"</mark>"+s.slice(i+q.length)};
+  main.innerHTML=`<h1>Busca</h1><p>${r.length} resultado(s) para “${q.replace(/</g,"&lt;")}”.</p><div class=grid>`+r.map(t=>{
+    const i=norm(t.txt).indexOf(k),sn=t.txt.slice(Math.max(0,i-50),i+90);
+    return `<a class=tc href="#/${t.id}"><b>${t.t}</b><span>…${hl(sn)}…</span></a>`}).join("")+`</div>`+(r.length?"":"<p>Tente outra palavra, como “ferro”, “pega” ou “insulina”.</p>");
+}
+
+/* ===================== Roteador ===================== */
+function route(){
+  $("#q").value="";document.body.classList.remove("open");$("#menuBtn").setAttribute("aria-expanded","false");
+  const id=location.hash.replace(/^#\//,"")||"inicio",t=T.find(x=>x.id==id);
+  let h,title="Materno-Infantil | Plataforma de Estudos";
+  if(t){h=topic(t);title=t.t+" | Materno-Infantil"}
+  else if(id=="flashcards"){h=flash();title="Flashcards | Materno-Infantil"}
+  else if(id=="simulado")h=sim();
+  else if(id=="banco")h=bank();
+  else if(id=="revisao")h=review();
+  else h=home();
+  main.innerHTML=h;document.title=title;buildSide(t?t.id:id);scrollTo(0,0);
+}
+function redraw(){const y=scrollY;route_keep();scrollTo(0,y)}
+function route_keep(){ // re-renderiza a view atual sem limpar a busca
+  const id=location.hash.replace(/^#\//,"")||"inicio",t=T.find(x=>x.id==id);
+  main.innerHTML=t?topic(t):id=="flashcards"?flash():id=="simulado"?sim():id=="banco"?bank():id=="revisao"?review():home();
+  buildSide(t?t.id:id);
+}
+addEventListener("hashchange",route);
+
+/* ===================== Eventos ===================== */
+main.addEventListener("click",e=>{
+  const b=e.target.closest("[data-a]");if(!b)return;const a=b.dataset.a,id=+b.dataset.id;
+  const ids=()=>fl.only?fl.order.filter(i=>rev.includes(i)):fl.order;
+  if(a=="all"||a=="none")main.querySelectorAll("details").forEach(d=>d.open=a=="all");
+  else if(a=="done"){const k=b.dataset.id;done=done.includes(k)?done.filter(x=>x!=k):done.concat(k);sv("p1_done",done);redraw();}
+  else if(a=="flip"){fl.flip=!fl.flip;redraw()}
+  else if(a=="fnext"){fl.i=(fl.i+1)%ids().length;fl.flip=false;redraw()}
+  else if(a=="fprev"){fl.i=(fl.i-1+ids().length)%ids().length;fl.flip=false;redraw()}
+  else if(a=="shuf"){fl.order=shuffle(fl.order);fl.i=0;fl.flip=false;redraw()}
+  else if(a=="know"){rev=rev.filter(x=>x!=id);sv("p1_rev",rev);fl.flip=false;if(fl.only&&fl.i>=ids().length)fl.i=0;else if(!fl.only)fl.i=(fl.i+1)%ids().length;redraw()}
+  else if(a=="later"){if(!rev.includes(id)){rev.push(id);sv("p1_rev",rev)}redraw()}
+  else if(a=="sstart"){sm=mkSim();redraw();scrollTo(0,0)}
+  else if(a=="sopt"){const k=+b.dataset.k,n=sm.qs[sm.i].i;sm.ans=k;if(k==B[n][4])sm.cs++;else addW(n);redraw()}
+  else if(a=="sshow"){sm.show=true;redraw()}
+  else if(a=="sself"){const v=+b.dataset.v,n=sm.qs[sm.i].i;sm.os+=v-(sm.self||0);sm.self=v;if(v<1)addW(n);redraw()}
+  else if(a=="snext"){sm.i++;sm.ans=null;sm.txt="";sm.show=false;sm.self=null;redraw();scrollTo(0,0)}
+  else if(a=="bf"){bk[b.dataset.k]=b.dataset.v;redraw()}
+  else if(a=="rm"){rev=rev.filter(x=>x!=id);sv("p1_rev",rev);redraw()}
+  else if(a=="rmq"){wrong=wrong.filter(x=>x!=id);sv("p1_wrong",wrong);redraw()}
+  else if(a=="revgo"){fl.only=true;fl.i=0;fl.flip=false;location.hash="#/flashcards"}
+});
+main.addEventListener("change",e=>{if(e.target.dataset.a=="only"){fl.only=e.target.checked;fl.i=0;fl.flip=false;redraw()}});
+main.addEventListener("keydown",e=>{if((e.key=="Enter"||e.key==" ")&&e.target.dataset.a=="flip"){e.preventDefault();fl.flip=!fl.flip;redraw()}});
+main.addEventListener("input",e=>{if(e.target.id=="ta"&&sm)sm.txt=e.target.value});
+$("#q").addEventListener("input",e=>{const v=e.target.value.trim();if(v.length<2){route_keep();return}results(v)});
+$("#q").addEventListener("keydown",e=>{if(e.key=="Escape"){e.target.value="";route_keep()}});
+$("#menuBtn").addEventListener("click",()=>{const o=document.body.classList.toggle("open");$("#menuBtn").setAttribute("aria-expanded",o)});
+$("#ov").addEventListener("click",()=>{document.body.classList.remove("open");$("#menuBtn").setAttribute("aria-expanded","false")});
+addEventListener("keydown",e=>{if(e.key=="Escape"&&document.body.classList.contains("open")){document.body.classList.remove("open");$("#menuBtn").focus()}});
+$("#side").addEventListener("click",e=>{if(e.target.closest("a"))document.body.classList.remove("open")});
+const topBtn=$("#top");
+addEventListener("scroll",()=>{topBtn.style.display=scrollY>500?"block":"none"},{passive:true});
+topBtn.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+route();
+</script>
+</body>
+</html>
